@@ -61,7 +61,7 @@ class DL_Imgbanner_Widget extends WP_Widget {
 			    id="<?php echo $this->get_field_id( 'image_uri' ); ?>"
 			    value="<?php echo $image_uri; ?>"
 			/>
-			<a href="#" style="width: 100%; text-align: center;" class="button custom_media_upload">Загрузить/Выбрать из библиотеке</a>
+			<a href="#" style="width: 100%; text-align: center;" class="button custom_media_upload">Загрузить/Выбрать из библиотеки</a>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>">Заголовок:</label>
