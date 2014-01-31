@@ -86,7 +86,7 @@ class DL_Imgbanner_Widget extends WP_Widget {
 	}
 }
 
-function register_dl_imgbanner_script($hook){
+function register_dl_imgbanner_script(){
 	wp_enqueue_media();
 	wp_enqueue_script('dl_script', plugins_url('/media_upload.js', __FILE__));
 }
