@@ -51,16 +51,33 @@ class DL_Imgbanner_Widget extends WP_Widget {
 		?>
 		<p>
 			<img class="custom_media_image" src="<?php echo $instance[ 'image_uri' ] ?>" style="width:100%; display:inline-block" />
-			<input type="hidden" class="widefat custom_media_url" name="<?php echo $this->get_field_name( 'image_uri' ); ?>" id="<?php echo $this->get_field_id( 'image_uri' ); ?>" value="<?php echo $instance[ 'image_uri' ]; ?>">
+			<input
+				type="hidden"
+			    class="widefat custom_media_url"
+			    name="<?php echo $this->get_field_name( 'image_uri' ); ?>"
+			    id="<?php echo $this->get_field_id( 'image_uri' ); ?>"
+			    value="<?php echo $instance[ 'image_uri' ]; ?>"
+			/>
 			<a href="#" style="width: 100%; text-align: center;" class="button custom_media_upload">Загрузить/Выбрать из библиотеке</a>
 		</p>
 		<p>
-		<label for="<?php echo $this->get_field_id( 'title' ); ?>">Заголовок:</label>
-		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>"/>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>">Заголовок:</label>
+			<input
+				class="widefat"
+				id="<?php echo $this->get_field_id( 'title' ); ?>"
+			    name="<?php echo $this->get_field_name( 'title' ); ?>"
+			    type="text"
+			    value="<?php echo esc_attr( $title ); ?>"
+			/>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'stitle' ); ?>">Выводить заголовок:</label>
-			<input id="<?php echo $this->get_field_id( 'stitle' ); ?>" name="<?php echo $this->get_field_name( 'stitle' ); ?>" value="true" <?php if( $instance['stitle'] ) echo 'checked="checked"'; ?> type="checkbox" checked/>
+			<input
+				id="<?php echo $this->get_field_id( 'stitle' ); ?>"
+				name="<?php echo $this->get_field_name( 'stitle' ); ?>"
+				value="true" <?php if( $instance['stitle'] ) echo 'checked="checked"'; ?>
+				type="checkbox" checked
+			/>
 		</p>
 		<?php
 	}
