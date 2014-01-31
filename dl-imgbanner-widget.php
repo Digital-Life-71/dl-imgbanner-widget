@@ -20,7 +20,7 @@ class DL_Imgbanner_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'DL_ImgBanner_Widget', // идентификатор виджета
-            'DL-IMGBanner Widgwt', // название виджета
+            'DL-IMGBanner Widget', // название виджета
             array( 'description' => 'Выводим баннер на сайт' ) // Опции
         );
     } 
