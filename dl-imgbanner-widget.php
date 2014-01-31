@@ -1,9 +1,9 @@
 <?php
 	/*
 	Plugin Name: DL-IMGBanner widget
-	Description: Виджет позволяет быстро и просто доавить баннер картинку на сайт
+	Description: Виджет позволяет быстро и просто добавить баннер или картинку на сайт
 	Plugin URI: http://vcard.dd-l.name/wp-plugins/
-	Tags: dl, widgwgt, banner, images
+	Tags: dl, widget, banner, images
 	Version: 0.1
 	Author: Dyadya Lesha (info@dd-l.name)
 	Author URI: http://dd-l.name
