@@ -45,18 +45,21 @@ class DL_Imgbanner_Widget extends WP_Widget {
 		$instance['stitle'] = strip_tags( $new_instance['stitle'] );
 		return $instance;
 	}
-    public function form( $instance )
-	{
-		$title = $instance[ 'title' ];
+
+
+    public function form( $instance ) {
+		$image_uri = isset( $instance[ 'image_uri' ] ) ? $instance[ 'image_uri' ] : '';
+		$title = isset( $instance[ 'title' ] ) ? $instance[ 'title' ] : '';
+		$stitle = isset( $instance[ 'stitle' ] ) ? $instance[ 'stitle' ] : '';
 		?>
 		<p>
-			<img class="custom_media_image" src="<?php echo $instance[ 'image_uri' ] ?>" style="width:100%; display:inline-block" />
+			<img class="custom_media_image" src="<?php echo $image_uri; ?>" style="width:100%; display:inline-block" />
 			<input
 				type="hidden"
 			    class="widefat custom_media_url"
 			    name="<?php echo $this->get_field_name( 'image_uri' ); ?>"
 			    id="<?php echo $this->get_field_id( 'image_uri' ); ?>"
-			    value="<?php echo $instance[ 'image_uri' ]; ?>"
+			    value="<?php echo $image_uri; ?>"
 			/>
 			<a href="#" style="width: 100%; text-align: center;" class="button custom_media_upload">Загрузить/Выбрать из библиотеке</a>
 		</p>
@@ -75,7 +78,7 @@ class DL_Imgbanner_Widget extends WP_Widget {
 			<input
 				id="<?php echo $this->get_field_id( 'stitle' ); ?>"
 				name="<?php echo $this->get_field_name( 'stitle' ); ?>"
-				value="true" <?php if( $instance['stitle'] ) echo 'checked="checked"'; ?>
+				value="true" <?php if( $stitle ) echo 'checked="checked"'; ?>
 				type="checkbox" checked
 			/>
 		</p>
